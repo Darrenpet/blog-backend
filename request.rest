@@ -1,0 +1,85 @@
+GET http://localhost:4000/users
+
+###
+
+GET http://localhost:4000/users/
+
+###
+
+POST http://localhost:4000/users/
+Content-Type: application/json
+
+{
+    "name": "Darren Petersen",
+    "email": "darrenpetersen007@gmail.com",
+    "contact": "0787521530",
+    "password": "123456"
+}
+
+###
+
+PATCH http://localhost:4000/users/
+Content-Type: application/json
+
+{
+    "name": "Darren Petersen",
+    "email": "darrenpetersen16@gmail.com",
+    "contact": "0787521530",
+    "password": 123456
+}
+
+###
+
+PUT http://localhost:4000/users/
+
+
+###
+
+DELETE http://localhost:4000/users/
+
+###
+
+
+
+GET http://localhost:4000/posts
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoiRGFycmVuIFBldGVyc2VuIiwiZW1haWwiOiJkYXJyZW5wZXRlcnNlbjAwN0BnbWFpbC5jb20iLCJjb250YWN0IjoiMDc4NzUyMTUzMCIsInBhc3N3b3JkIjoiJDJiJDEwJGFCaG9HSHNCd0FHNm1CSDNqbWE2c3VBYVovQS5UYzBLYjdOYUFRSzlKTnJZYWYvRVZQOXFpIiwiYXZhdGFyIjpudWxsLCJhYm91dCI6bnVsbCwiX2lkIjoiNjIxNGUyNGRiNGMzNzA4NjA2OGM5MGY0IiwiZGF0ZSI6IjIwMjItMDItMjJUMTM6MTc6MDEuMzc2WiIsIl9fdiI6MH0.B1rtNXP8Z-FHbFjNHU5dzSYmfd4o9r1lcRZ1KvHMtc8
+
+###
+
+GET http://localhost:4000/posts/
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoiRGFycmVuIFBldGVyc2VuIiwiZW1haWwiOiJkYXJyZW5wZXRlcnNlbjAwN0BnbWFpbC5jb20iLCJjb250YWN0IjoiMDc4NzUyMTUzMCIsInBhc3N3b3JkIjoiJDJiJDEwJGFCaG9HSHNCd0FHNm1CSDNqbWE2c3VBYVovQS5UYzBLYjdOYUFRSzlKTnJZYWYvRVZQOXFpIiwiYXZhdGFyIjpudWxsLCJhYm91dCI6bnVsbCwiX2lkIjoiNjIxNGUyNGRiNGMzNzA4NjA2OGM5MGY0IiwiZGF0ZSI6IjIwMjItMDItMjJUMTM6MTc6MDEuMzc2WiIsIl9fdiI6MH0.B1rtNXP8Z-FHbFjNHU5dzSYmfd4o9r1lcRZ1KvHMtc8
+
+
+###
+
+POST http://localhost:4000/posts/
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoiRGFycmVuIFBldGVyc2VuIiwiZW1haWwiOiJkYXJyZW5wZXRlcnNlbjAwN0BnbWFpbC5jb20iLCJjb250YWN0IjoiMDc4NzUyMTUzMCIsInBhc3N3b3JkIjoiJDJiJDEwJGFCaG9HSHNCd0FHNm1CSDNqbWE2c3VBYVovQS5UYzBLYjdOYUFRSzlKTnJZYWYvRVZQOXFpIiwiYXZhdGFyIjpudWxsLCJhYm91dCI6bnVsbCwiX2lkIjoiNjIxNGUyNGRiNGMzNzA4NjA2OGM5MGY0IiwiZGF0ZSI6IjIwMjItMDItMjJUMTM6MTc6MDEuMzc2WiIsIl9fdiI6MH0.B1rtNXP8Z-FHbFjNHU5dzSYmfd4o9r1lcRZ1KvHMtc8
+Content-Type: application/json
+
+{
+    "title": "sdfghjkiuytrfdxcsd",
+    "body": "aasofoefmsoefm",
+    "date": "",
+    "author": "ayoooo"
+}
+
+###
+
+PUT http://localhost:4000/posts/
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoiRGFycmVuIFBldGVyc2VuIiwiZW1haWwiOiJkYXJyZW5wZXRlcnNlbjAwN0BnbWFpbC5jb20iLCJjb250YWN0IjoiMDc4NzUyMTUzMCIsInBhc3N3b3JkIjoiJDJiJDEwJGFCaG9HSHNCd0FHNm1CSDNqbWE2c3VBYVovQS5UYzBLYjdOYUFRSzlKTnJZYWYvRVZQOXFpIiwiYXZhdGFyIjpudWxsLCJhYm91dCI6bnVsbCwiX2lkIjoiNjIxNGUyNGRiNGMzNzA4NjA2OGM5MGY0IiwiZGF0ZSI6IjIwMjItMDItMjJUMTM6MTc6MDEuMzc2WiIsIl9fdiI6MH0.B1rtNXP8Z-FHbFjNHU5dzSYmfd4o9r1lcRZ1KvHMtc8
+Content-Type: application/json
+
+{
+    "title": "Sun",
+    "body": "I am always shinning",
+    "date": "",
+    "author": "2"
+}
+
+###
+
+DELETE http://localhost:4000/posts/
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoiRGFycmVuIFBldGVyc2VuIiwiZW1haWwiOiJkYXJyZW5wZXRlcnNlbjAwN0BnbWFpbC5jb20iLCJjb250YWN0IjoiMDc4NzUyMTUzMCIsInBhc3N3b3JkIjoiJDJiJDEwJGFCaG9HSHNCd0FHNm1CSDNqbWE2c3VBYVovQS5UYzBLYjdOYUFRSzlKTnJZYWYvRVZQOXFpIiwiYXZhdGFyIjpudWxsLCJhYm91dCI6bnVsbCwiX2lkIjoiNjIxNGUyNGRiNGMzNzA4NjA2OGM5MGY0IiwiZGF0ZSI6IjIwMjItMDItMjJUMTM6MTc6MDEuMzc2WiIsIl9fdiI6MH0.B1rtNXP8Z-FHbFjNHU5dzSYmfd4o9r1lcRZ1KvHMtc8
+Content-Type: application/json
+
+###
